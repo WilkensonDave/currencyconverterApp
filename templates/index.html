@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Welcome to our Currency converter</h1>
+    <div class="container">
+        <h2>Convert your money</h2>
+        <div class="display-section">
+            <p>Get country's code</p>
+        <section class="first-section">
+            <select name="base" id="currency-codes">
+                {% for code in codes%}
+                <option value="">{{' '.join(code)}}</option>
+                {% endfor %}
+            </select>
+        </section>
+
+        <section>
+        <form action="/" class="currency-form" method="POST">
+            <select name="basecurrency" class="select-currency">
+                <option selected>Base currency</option>
+                {% for key, value in countries.items()%}
+                <option type="text">{{key}}</option>
+                {% endfor %}
+            </select>
+
+            <select name="tocurrency" class="tocurrency">
+                <option selected>To currency</option>
+                {% for key, value in countries.items()%}
+                <option type="text">{{key}}</option>
+                {% endfor %}
+            </select>
+
+            <input type="number" placeholder="amount" name="amount">
+            <button type="submit" class="btn">Calculate</button>
+        </form>
+
+        <h3>{{ basecurrency}} {{ amount }} = {{ finalresult}} {{tocurrency}}</h3>
+    </section>
+</div>
+</div>
+</body>
+</html>

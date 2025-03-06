@@ -1,0 +1,48 @@
+
+.container{
+    background-color: #0077b6;
+    padding-top: 30px;
+    border: 2px solid #0077b6;
+    width: 700px;
+    height: auto;
+    margin:  20px auto;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 6px 6px 6px 6px #f77f00;
+    border-radius: 25px;
+    
+}
+
+.display-section{
+    display: grid;
+}
+.currency-form{
+    padding: 20px;
+    margin-top: 40px;
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2{
+    text-align: center;
+}
+
+.container{
+    display: grid;
+}
+
+p{
+    text-align: center;
+}
+
+.first-section{
+    text-align: center
+}
